@@ -5,6 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { LoginLayoutComponent } from './layout/login-layout/login-layout.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +22,8 @@ export const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
       {
         path: 'usuario',
         loadComponent: () =>
